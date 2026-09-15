@@ -18,6 +18,7 @@ body { min-height:100vh; margin:0; display:grid; place-items:center; padding:28p
 .eyebrow { margin:26px 0 10px; color:var(--gold); font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase; }
 h1 { margin:0; color:var(--navy); font:800 clamp(31px,5vw,54px)/1.08 Manrope,sans-serif; }
 .urdu { margin:24px 0 4px; color:var(--navy); font:400 clamp(21px,3vw,30px)/1.7 Georgia,serif; }
+.phone-number { color:inherit; font-family:"DM Sans",sans-serif; text-decoration:none; white-space:nowrap; }
 .subtitle { margin:0; color:var(--blue); font:400 clamp(17px,2.3vw,23px)/1.8 Georgia,serif; }
 .gold-rule { display:flex; align-items:center; gap:10px; width:min(100%,380px); margin:18px 0 23px; color:var(--gold); }
 .gold-rule::before,.gold-rule::after { content:""; flex:1; height:1px; background:var(--gold); }
@@ -43,4 +44,4 @@ h1 { margin:0; color:var(--navy); font:800 clamp(31px,5vw,54px)/1.08 Manrope,san
 .corner-top-right { top:18px; right:18px; border-width:1px 1px 0 0; }
 .corner-bottom-left { bottom:18px; left:18px; border-width:0 0 1px 1px; }
 .corner-bottom-right { right:18px; bottom:18px; border-width:0 1px 1px 0; }
-@media (max-width:640px) { body { padding:10px; } .profile-card { min-height:100vh; } .content { padding:34px 18px; } .portrait-ring { width:142px; height:142px; } .social-links { grid-template-columns:1fr; max-width:320px; } .social-link { justify-content:flex-start; padding:10px 22px; border-right:0; border-bottom:1px solid rgba(16,41,67,.22); } .social-link:last-child { border-bottom:0; } .social-copy small { font-size:13px; } }
+@media (max-width:640px) { body { padding:10px; } .profile-card { min-height:100vh; } .content { padding:34px 18px; } h1 { max-width:100%; font-size:clamp(20px,6.4vw,30px); line-height:1.15; overflow-wrap:normal; word-break:normal; text-wrap:balance; } .portrait-ring { width:142px; height:142px; } .social-links { grid-template-columns:1fr; max-width:320px; } .social-link { justify-content:flex-start; padding:10px 22px; border-right:0; border-bottom:1px solid rgba(16,41,67,.22); } .social-link:last-child { border-bottom:0; } .social-copy small { font-size:13px; } }
