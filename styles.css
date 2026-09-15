@@ -22,7 +22,7 @@ h1 { margin:0; color:var(--navy); font:800 clamp(31px,5vw,54px)/1.08 Manrope,san
 .subtitle { margin:0; color:var(--blue); font:400 clamp(17px,2.3vw,23px)/1.8 Georgia,serif; }
 .gold-rule { display:flex; align-items:center; gap:10px; width:min(100%,380px); margin:18px 0 23px; color:var(--gold); }
 .gold-rule::before,.gold-rule::after { content:""; flex:1; height:1px; background:var(--gold); }
-.social-links { width:100%; display:grid; grid-template-columns:repeat(4,1fr); max-width:680px; margin-bottom:32px; }
+.social-links { width:100%; display:grid; grid-template-columns:repeat(5,1fr); max-width:850px; margin-bottom:32px; }
 .social-link { display:flex; align-items:center; justify-content:center; gap:10px; min-height:68px; padding:8px 12px; color:var(--navy); text-decoration:none; border-bottom:1px solid transparent; transition:color .2s ease,border-color .2s ease; }
 .social-link:hover,.social-link:focus-visible { color:var(--gold); border-bottom-color:var(--gold); outline:none; }
 .icon { display:grid; flex:0 0 38px; place-items:center; width:38px; height:38px; color:currentColor; }
