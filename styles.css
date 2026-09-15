@@ -22,17 +22,14 @@ h1 { margin:0; color:var(--navy); font:800 clamp(31px,5vw,54px)/1.08 Manrope,san
 .subtitle { margin:0; color:var(--blue); font:400 clamp(17px,2.3vw,23px)/1.8 Georgia,serif; }
 .gold-rule { display:flex; align-items:center; gap:10px; width:min(100%,380px); margin:18px 0 23px; color:var(--gold); }
 .gold-rule::before,.gold-rule::after { content:""; flex:1; height:1px; background:var(--gold); }
-.social-links { width:100%; display:grid; grid-template-columns:repeat(2,1fr); max-width:560px; margin-bottom:32px; }
-.social-link { display:flex; align-items:center; justify-content:center; gap:11px; min-height:68px; padding:8px 16px; color:var(--navy); text-decoration:none; border-right:1px solid rgba(16,41,67,.28); transition:background .2s ease; }
-.social-link:last-child { border-right:0; }
-.social-link:hover,.social-link:focus-visible { background:rgba(200,154,59,.13); outline:none; }
-.icon { display:grid; flex:0 0 48px; place-items:center; width:48px; height:48px; color:white; border-radius:50%; font:700 32px Arial,sans-serif; }
-.whatsapp .icon { background:#18ad68; transform:rotate(-20deg); }
-.play-icon { background:#e9322d; font-size:18px; }
-.facebook-icon { background:#2169bd; font-size:36px; font-family:Arial,sans-serif; }
+.social-links { width:100%; display:grid; grid-template-columns:repeat(4,1fr); max-width:680px; margin-bottom:32px; }
+.social-link { display:flex; align-items:center; justify-content:center; gap:10px; min-height:68px; padding:8px 12px; color:var(--navy); text-decoration:none; border-bottom:1px solid transparent; transition:color .2s ease,border-color .2s ease; }
+.social-link:hover,.social-link:focus-visible { color:var(--gold); border-bottom-color:var(--gold); outline:none; }
+.icon { display:grid; flex:0 0 38px; place-items:center; width:38px; height:38px; color:currentColor; }
+.icon svg { width:32px; height:32px; display:block; }
 .social-copy { display:flex; flex-direction:column; align-items:flex-start; text-align:left; }
-.social-copy strong { font-size:16px; line-height:1.25; }
-.social-copy small { max-width:205px; margin-top:4px; font-size:12px; line-height:1.3; }
+.social-copy strong { font-size:15px; line-height:1.25; }
+.social-copy small { max-width:150px; margin-top:3px; font-size:11px; line-height:1.3; }
 .qr-section { display:flex; flex-direction:column; align-items:center; }
 .qr-frame { width:min(210px,55vw); aspect-ratio:1; padding:10px; border:4px solid var(--navy); border-radius:18px; background:white; box-shadow:0 8px 0 rgba(200,154,59,.15); }
 .qr-frame img { width:100%; height:100%; display:block; image-rendering:pixelated; }
